@@ -4,24 +4,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0px auto;
+}
 .top{
-   height: 300%;
+   height: 200%;
    width: 100%;
-  
+
+
 }
 .navbar {
-    width: 92%;
-    height: 73px;
-    margin: 40px 53px 20px 53px;
+    width: 95%;
+    min-height: 73px;
+    height: auto;
+    margin: 30px auto 20px auto;
+    padding: 10px;
     background-color: #eeeeee;
     border: 1px solid #cbd3dc;
     border-radius: 50px;
-
-   display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1px;
 }
+
 /* Location */
 
 .location {
@@ -101,8 +112,8 @@
 /* Logo */
 
 .logo {
-    width: 347px;
-    height: 80px;
+    min-width: 160px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,11 +121,10 @@
 }
 
 .logo img {
-    margin-left: 90px;
-    width: 590px;
-    height: 98px;
-    margin-bottom: 39px;
-    object-fit: contain;
+   width: 200%;
+    max-width: 280px;
+    height: 96px;
+    margin: 0px 80px 20px;
 }
 /* Complaint */
 
@@ -203,16 +213,66 @@
     width: 36px;
     height: 36px;
 }
+/* links */
+.links {
+    position: fixed;
+    left: 20px;
+    bottom: 80px;
+    z-index: 1000;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border-radius: 16px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    box-shadow: 0px 3px 12px #ccc;
+    text-decoration: none;
+}
+
+.angle {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border-radius: 16px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    box-shadow: 0px 3px 12px #ccc;
+    text-decoration: none;
+}
+
+/* hero */
 .hero-img img{ 
-    width: 94%;
+    width: 92vw;
     border-radius: 50px;
-    margin: 0px 35px auto;
+    margin: 15px 35px auto;
 }
 .cards{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 15px 20px;
+    justify-content: flex-start;
+    margin: 30px auto;
+    padding: 50px;
+    width: 90%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+.shorts-cards{
+    width: 110px;
+    flex-shrink: 0;
+    text-align: center;
 }
 .shorts-cards img{
    width: 90%;
@@ -239,7 +299,7 @@
 }
 .search-bar {
     background-color: white;
-    width: 86%;
+    width: 56%;
     height: 59px;
     margin: 51px auto;
     border-radius: 50px;
@@ -251,6 +311,7 @@
     align-items: center;
     justify-content: space-between;
     outline: none;
+    flex-wrap: nowrap;
 }
 
 .search-bar input {
@@ -261,6 +322,7 @@
 }
 
 .red {
+    
     background-color: red;
     color: white;
     border: none;
@@ -276,20 +338,635 @@
     src: url(./Freckle_Face/FreckleFace-Regular.ttf);
 }
 .popular-items{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+h1{
     font-family: something;
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 50px;
+    font-weight: bold;
     text-transform: uppercase;
 }
-.popular-items img{
-    width: 4%;
-    height: 4%;
-}
+
 h1 {
- color: black;
+    flex-direction: row;
+    text-align: left;
+    color: black;
 
 }
 
-h1 span {
+
+/* Popular Items */
+
+.popular-items {
+    width: 95%;
+    margin: 40px auto;
+}
+
+.popular-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.popular-heading img {
+    width: 25px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.popular-heading h1 {
+    font-family: something;
+    font-size: 40px;
+    text-align: left;
+}
+
+.popular-heading span {
     color: red;
+}
+
+.popular-heading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+
+.popular-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 24%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    border-radius: 20px;
+    background-color: red;
+    
+}
+
+.product-card h3 {
+    font-family: Anton, sans-serif;
+    font-size: 19px;
+    margin-top: 10px;
+    color: #172033;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.product-info p {
+    font-family: something;
+    font-size: 16px;
+    color: gray;
+}
+
+.product-info button {
+    width: 42px;
+    height: 42px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 28px;
+    cursor: pointer;
+}
+/* section */
+
+.banner {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.arabic-delicacies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 70px auto;
+    /* align-items: stretch; */
+    gap: 8px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.arabic-cards{
+    width: 24%;
+    border: 1px solid red;
+    border-radius: 16px;
+    padding: 6px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    margin-bottom: 20px;
+
+}
+.arabic-cards img{
+    display: block;
+    width: 100%;
+    height: 290px;
+    border-radius: 18px;
+}
+.arabic-cards h3 {
+    font-family: Anton, sans-serif;
+    font-size: 19px;
+    margin: 12px 8px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+.arabic-cards > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0 8px;
+    font-weight: bold;
+    line-height: 21px;
+    color: rgb(63, 62, 62);
+}
+.arabic-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 8px 6px 8px;
+    padding-top: 15px;
+}
+.arabic-info p {
+    font-family: something;
+    font-size: 20px;
+    color: black;
+}
+.arabic-info button {
+    width: 42px;
+    height: 42px;
+    background-color: #ff3038;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ALL PRODUCT SECTIONS */
+.sando,
+.exclusive-deals,
+.burgers-deals,
+.new-arrival,
+.family,
+.our-signature,
+.the-original,
+.premium,
+.lacha,
+.ice-cream,
+.sweet {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+
+/* ALL PRODUCT CARDS */
+.sando-cards,
+.exclusive-deals-cards,
+.burgers-deals-cards,
+.new-arrival-cards,
+.family-cards,
+.our-signature-cards,
+.premium-cards,
+.lacha-cards,
+.ice-cream-cards,
+.sweet-cards {
+    width: 24%;
+    border: 1px solid red;
+    border-radius: 16px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    min-width: 200px;
+}
+
+
+/* PRODUCT IMAGES */
+.sando-cards img,
+.exclusive-deals-cards img,
+.burgers-deals-cards img,
+.new-arrival-cards img,
+.family-cards img,
+.our-signature-cards img,
+.premium-cards img,
+.lacha-cards img,
+.ice-cream-cards img,
+.sweet-cards img {
+    width: 100%;
+    height: 290px;
+    border-radius: 18px;
+}
+
+
+/* PRODUCT HEADINGS */
+.sando-cards h3,
+.exclusive-deals-cards h3,
+.burgers-deals-cards h3,
+.new-arrival-cards h3,
+.family-cards h3,
+.our-signature-cards h3,
+.premium-cards h3,
+.lacha-cards h3,
+.ice-cream-cards h3,
+.sweet-cards h3 {
+    font-family: Anton, sans-serif;
+    font-size: 19px;
+    margin: 12px 8px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+
+/* PRODUCT PARAGRAPHS */
+.sando-cards > p,
+.exclusive-deals-cards > p,
+.burgers-deals-cards > p,
+.new-arrival-cards > p,
+.family-cards > p,
+.our-signature-cards > p,
+.premium-cards > p,
+.lacha-cards > p,
+.ice-cream-cards > p,
+.sweet-cards > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0 8px;
+    font-weight: bold;
+    line-height: 21px;
+    color: rgb(63, 62, 62);
+}
+
+
+/* PRICE AND BUTTON ROW */
+.sando-info,
+.exclusive-deals-info,
+.burgers-deals-info,
+.new-arrival-info,
+.family-info,
+.our-signature-info,
+.premium-info,
+.lacha-info,
+.ice-cream-info,
+.sweet-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 8px 6px 8px;
+    padding-top: 15px;
+}
+
+
+/* PRICE */
+.sando-info p,
+.exclusive-deals-info p,
+.burgers-deals-info p,
+.new-arrival-info p,
+.family-info p,
+.our-signature-info p,
+.premium-info p,
+.lacha-info p,
+.ice-cream-info p,
+.sweet-info p {
+    font-family: something;
+    font-size: 20px;
+    color: black;
+}
+
+
+/* PLUS BUTTON */
+.sando-info button,
+.exclusive-deals-info button,
+.burgers-deals-info button,
+.new-arrival-info button,
+.family-info button,
+.our-signature-info button,
+.premium-info button,
+.lacha-info button,
+.ice-cream-info button,
+.sweet-info button {
+    width: 42px;
+    height: 42px;
+    background-color: #ff3038;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 28px;
+    cursor: pointer;
+}
+.our-signature {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.our-signature-cards {
+    width: 24%;
+    border: 1px solid red;
+    border-radius: 16px;
+    padding: 6px;
+}
+.exclusive-deals {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.exclusive-deals-cards {
+    width: 24%;
+    border: 1px solid red;
+    border-radius: 16px;
+    padding: 6px;
+    margin-right: 15px;
+}
+.premium {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.premium-cards {
+    width: 24%;
+    border: 1px solid red;
+    border-radius: 16px;
+    padding: 6px;
+    margin-right: 15px;
+}
+.sweet {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.sweet-cards {
+    width: 24%;
+    border: 1px solid red;
+    border-radius: 16px;
+    padding: 6px;
+    margin-right: 15px;
+}
+/* app-banner */
+
+.app-banner {
+    width: 96%;
+    height: 325px;
+    margin: 40px auto;
+    background: linear-gradient(to bottom, red, #c90000);
+    border-radius: 50px;
+    position: relative;
+}
+
+/* Main heading */
+.app-banner h1 {
+    position: absolute;
+    top: 24px;
+    left: 100px;
+    font-family: Anton, sans-serif;
+    font-size: 55px;
+    color: white;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* Description */
+.app-banner > p {
+    position: absolute;
+    top: 169px;
+    left: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+    line-height: 25px;
+    margin: 0;
+  
+}
+
+/* Phone and chicken images */
+.app-image {
+    position: absolute;
+    top: -45px;
+    right: 80px;
+    width: 520px;
+    height: 390px;
+}
+
+.app-img1 {
+    position: absolute;
+    left: 0;
+    right: 30px;
+    top: 10px;
+    width: 235px;
+    height: 390px;
+   z-index: 0;
+}
+
+.app-img2 {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    bottom: 10px;
+    width: 390px;
+    height: 390px;
+    z-index: 1000;
+}
+
+/* App store buttons */
+.app1, .app2 {
+    position: absolute;
+    bottom: 27px;
+    width: 160px;
+    height: 47px;
+    background-color: black;
+    border-radius: 6px;
+    
+}
+
+.app1 {
+    left: 100px;
+}
+
+.app2 {
+    left: 270px;
+}
+
+.app1 img, .app2 img {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+.app1 p, .app2 p {
+    position:  absolute;
+    left: 50px;
+    top: 5px;
+    color: white;
+    font-size: 9px;
+    margin: 0;
+}
+
+.app1 h3, .app2 h3 {
+    position: absolute;
+    left: 50px;
+    top: 17px;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    white-space: nowrap;
+}
+.app-banner + h2 {
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 50px auto;
+    color: #3d3c3c;
+}
+/* CONTACT */
+.footer-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 90px auto;
+    align-items: flex-start;
+    width: 100%;
+    padding: 60px 45px 45px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.footer-contact > img{
+    width: 205px;
+    height: 115px;
+   margin-top: 0;
+
+}
+.cont {
+    width: 300px;
+    border-left: 1px solid #cbd3dc;
+    padding-left: 32px;
+    min-height: 80px;
+}
+.cont h3,
+.follow h3,
+.help h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 18px 0;
+}
+.cont i {
+    color: red;
+    font-size: 17px;
+    float: left;
+    width: 30px;
+    margin-top: 3px;
+}
+
+.cont p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 23px;
+    margin: 0 0 12px 0;
+}
+/* follow */
+.follow {
+    width: 270px;
+    border-left: 1px solid #cbd3dc;
+    padding-left: 32px;
+    min-height: 80px;
+}
+.follow i {
+    color: red;
+    font-size: 22px;
+    margin-right: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+/* HELP */
+.help {
+    width: 260px;
+    border-left: 1px solid #cbd3dc;
+    padding-left: 32px;
+    min-height: 80px;
+}
+
+.help p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #333;
+    margin: 0 0 12px 0;
+    cursor: pointer;
+}
+/* FOOTER FOOD IMAGE */
+.footer-contact + img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* BOTTOM RED FOOTER */
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img {
+    width: 160px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.footer a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin: 0 12px;
 }

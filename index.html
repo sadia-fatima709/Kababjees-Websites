@@ -9,7 +9,7 @@
 </head>
 <body>
    <div class="container">
-      <div class="top"><img src="banner.png" alt="" width="100%"></div>   
+      <div id="top" class="top"><img src="banner.png" alt="" width="100%"></div>   
        <!-- Navbar -->
       <header class="navbar">
         <div class="location">
@@ -49,7 +49,15 @@
         <div class="menu">
          <img src="menu.png" alt="">
         </div>
-      </header> 
+      </header>
+        </div>
+        <!-- links -->
+       <div class="links">
+       <a class="search" href="#search-bar">
+       <i class="fa-solid fa-magnifying-glass"></i></a>
+       <a class="angle" href="#top">
+       <i class="fa-solid fa-angle-up"></i></a>
+       </div>
       <!-- hero-image -->
       <div class="hero-img">
          <img src="kababjeesfriedchicken.png" alt="">
@@ -130,64 +138,600 @@
         </div>
       </div>
       <!-- search-bar -->
-      <div class="search-bar">
+      <div id="search-bar" class="search-bar">
       <input type="text" placeholder="Search for">
       <span class="red">→</span>
       </div>
       <!-- popular-item -->
-      <div class="popular-items">
-         <img src="https://kababjeesfriedchicken.com/assets/images/KababjeesFried/popular.webp" alt="">
-        <h1>POPULAR <span>ITEMS</span></h1>   
-        <p>Most ordered right now</p>
-      </div>
+      <section class="popular-items">
+         <div class="popular-heading">
+           <img src="https://cdn-icons-png.flaticon.com/512/9509/9509913.png" alt="Fire">
+          <div>
+          <h1>POPULAR <span>ITEMS</span></h1>
+          <p>Most ordered right now</p>
+          </div>
+        </div>
+        <div class="popular-cards">
+            <div class="product-card">
+            <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1791694074-Ultimate-Crunch-feast-.jpg%3Fq%3D10&w=384&q=75" alt="Ultimate Crunch Feast">
+            <h3>ULTIMATE CRUNCH FEAST</h3>
+            <div class="product-info">
+            <p>Rs. 1560</p>
+            <button>+</button>
+            </div>
+            </div>
+            <div class="product-card">
+            <img src="https://images.openai.com/static-rsc-4/VTZCF0C3pqw511DfVVmasRj4iEPvZtvyLwHZJ9_MR4bBko250eOQ8ohJc0IZcNotoUy9Pi9zr5sksXi0h7I_JJzIxo5O5o8_o6RjssjlUZaZSWiV_Vwt7mMi28RIjc5-uRGP0iDrduEAhiHMFCTVYEcz-a9N8D7mLCQu-RP5JCrod-9irZl_wpkCxFYdrpeQ?purpose=fullsize" alt="2PCS Combo Deal">
+            <h3>2PCS COMBO DEAL</h3>
+            <div class="product-info">
+            <p>Rs. 650</p>
+            <button>+</button>
+            </div>
+            </div>
+            <div class="product-card">
+            <img src="https://images.openai.com/static-rsc-4/eIzahc-dWCweXtxFEl_hMn8rz4ErxV3CthpQL0R2-HvTjqL1BClfdPsVz2M0OgzPIH05I8xrQx92-WKyxTL5EwOd7l2XEuO91dpvNHccO-BWoeSecbISeDBPtJSWTmp8U5YMWieiA15wZfGwJpuM6IFQvbsJg_K3crqycHHK4jYlQDt-iMkD5ojPUfcbSs4L?purpose=fullsize" alt="Family Combo">
+            <h3>FAMILY COMBO 3</h3>
+            <div class="product-info">
+            <p>Rs. 2650</p>
+            <button>+</button>
+            </div>
+            </div>
+            <div class="product-card">
+            <img src="https://images.openai.com/static-rsc-4/I0XuKgicnPiSoCGMx7KPXdLM6uJYT28pmvex5lt7Rtczpvv9lRwy09jD06yZ6ZtkJerm0WKNECRMKSLS7NRONio458VDJK5tvzGiHwHLoeXCisGIe7-zvzosycqJqdGpqKrCH7caWpPi2Y8UfOeTYKnJ5gUlrGoZtE9zTP0DZYk?purpose=inline" alt="Chicken Burger">
+            <h3>CHICK N' CRUNCH BURGER</h3>
+            <div class="product-info">
+            <p>Rs. 310</p>
+            <button>+</button>
+            </div>
+            </div>
+        </div>
+      </section>
       <!-- section-1 -->
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1788868876-Group-520--1-.webp%3Fq%3D10&w=1200&q=75" alt="">
+        </div>
       <section id="arabic-delicacies" class="arabic-delicacies">
-        
+        <div class="arabic-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1794288012-fried-chicken-mandii1.jpeg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>FRIED FISH MANDI</h3>
+         <p>Golden, crispy fried fish served over a <br> bed of aromatic Arabic-style Mandi</p>
+         <div class="arabic-info">
+          <p>RS.1500</p>
+          <button>+</button>  
+         </div>
+        </div>
+        <div class="arabic-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1788862698-SpicyFcopy.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>SPICY FRIED CHICKEN...</h3>
+          <div class="arabic-info">
+          <p>RS.1150</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="arabic-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1788862720-INDOLJ1.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>SMOKY FRIED CHICKEN MANDI</h3>
+         <div class="arabic-info">
+          <p>RS.1250</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="arabic-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1788777570-extra-rive.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>EXTRA MANDI RICE</h3>
+         <p>An additional serving of our fragrant, <br> flavorful Mandi rice, perfectly...</p>
+         <div class="arabic-info">
+          <p>RS.390</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
-      <!-- section-2 -->
+      <!-- section-2 sando -->
+        <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1786639208-kabbbbbbbbbbb.webp%3Fq%3D10&w=1200&q=75" alt="">
+        </div>
       <section id="sando" class="sando">
-
+          <div class="sando-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1786519069-herbs2.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>HERB & MINT CHICKEN SANDO</h3>
+         <p>A crispy chicken fillet infused with <br> refreshing herbs and mint, layered...</p>
+         <div class="sando-info">
+          <p>RS.690</p>
+          <button>+</button>  
+         </div>
+        </div>
+        <div class="sando-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1786519245-natta.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>NASHVILLE SANDO</h3>
+         <p>Crispy, juicy chicken fillet coated in <br> bold Nashville-style spices, tucked...</p>
+          <div class="sando-info">
+          <p>RS.690</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="sando-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1790572999-2-nasville-1.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>2 NASHVILLE SANDO</h3>
+         <p>Get 2 Nashville Sando in Just 1200pkr</p>
+         <div class="sando-info">
+          <p>RS.1200</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="sando-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1790573099-2-herb---mint.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>2 HERB & MINT SANDO</h3>
+         <p>Get 2 Herb & Mint Sando in just <br> 1200pkr</p>
+         <div class="sando-info">
+          <p>RS.1200</p>
+          <button>+</button>  
+         </div>
+        </div> 
       </section>
-      <!-- section-3 -->
+      <!-- section-3 exclusive deals -->
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1782138269-Exclusive-Deals.webp%3Fq%3D10&w=1200&q=75" alt="">
+       </div>
       <section id="exclusive-deals" class="exclusive-deals">
-
+         <div class="exclusive-deals-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1791692954-Crunchmunch.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>CRUNCH & MUNCH</h3>
+         <p>6 Chicken Strips,, fries, 2 dips, and 2 <br> 330ml drink</p>
+         <div class="exclusive-deals-info">
+          <p>RS.1040</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="exclusive-deals-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1791694715-stripzilla-deal.png%3Fq%3D10&w=256&q=75" alt="">
+         <h3>3 STRIPZILLA +3 DRINKS</h3>
+         <p>GET 3 STRIPZILLA + 3 Drinks IN JUST <br> 1190PKR</p>
+         <div class="exclusive-deals-info">
+          <p>RS.1190</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
-      <!-- section-4 -->
-      <section id="burgers-&-deals" class="burgers-&-deals">
-
+      <!-- section-4 burgers & deals -->
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1782134302-Burger--Deals.webp%3Fq%3D10&w=1200&q=75" alt="">
+        </div>
+      <section id="burgers-&-deals" class="burgers-deals">
+        <div class="burgers-deals-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775916410-chickncrunchburger.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>CHICK N' CRUNCH BURGER</h3>
+         <p>Crispy goodness, ,made of chest <br> chicken meat. Along with Al Baik...</p>
+         <div class="burgers-deals-info">
+          <p>RS.310</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="burgers-deals-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775916709-zenga.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>ZENGA BURGER</h3>
+         <p>Crispy goodness, ,made of thigh <br> chicken meat making it more juicy....</p>
+         <div class="burgers-deals-info">
+          <p>RS.600</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="burgers-deals-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775904188-Siracha-burger-With-Fries.webp%3Fq%3D10&w=256&q=75" alt="">
+         <h3>SIRACHA BURGER + FRIES</h3>
+         <p>Siracha Burger along with regular fries</p>
+         <div class="burgers-deals-info">
+          <p>RS.550</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="burgers-deals-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775904280-WhatsAppImage2026-04-11at3.44.30PM.jpeg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>THE MAJESTY</h3>
+         <p>Double crispy chicken patty with <br> double goodness, along with a tinge...</p>
+         <div class="burgers-deals-info">
+          <p>RS.770</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
-      <!-- section-5 -->
+      <!-- section-5 new arrival -->
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1782134385-new-Arrival.webp%3Fq%3D10&w=1200&q=75" alt="">
+        </div>
       <section id="new-arrival" class="new-arrival">
-
+        <div class="new-arrival-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1767605929-9b65c63c-d6f8-4894-968f-a1548db83353.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>CHICKEN CRISPY ROLL</h3>
+         <p>Golden crispy paratha paired with <br> crispy chicken strips, smooth mayo,...</p>
+         <div class="new-arrival-info">
+          <p>RS.450</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="new-arrival-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1752444197-513943173_2591649091183910_4391925403956116986_n.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>CRUNCHY CHEESY...</h3>
+         <p>A hearty bed of rice topped with <br> crispy, golden chicken bites, drizzled...</p>
+         <div class="new-arrival-info">
+          <p>RS.450</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="new-arrival-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1752444901-509284363_2581744958884389_574158389435759992_n.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>CRUNCHY CHEESY...</h3>
+         <p>A mountain of crispy fries loaded with <br> crunchy chicken bites, smothered in...</p>
+         <div class="new-arrival-info">
+          <p>RS.720</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="new-arrival-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775899408-Burrito.webp%3Fq%3D10&w=256&q=75" alt="">
+         <h3>SPICY GIGANTIC BURRITO</h3>
+         <p>A warm tortilla wrapped around a <br> mouthwatering medley of crispy...</p>
+         <div class="new-arrival-info">
+          <p>RS.690</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="new-arrival-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775899712-Rice-Spice.webp%3Fq%3D10&w=256&q=75" alt="">
+         <h3>RICE N SPICE</h3>
+         <p>Savory spiced rice infused with <br> buttery richness, perfectly paired wit</p>
+         <div class="new-arrival-info">
+          <p>RS.420</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="new-arrival-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775906360-Spicy-Salsa.webp%3Fq%3D10&w=256&q=75" alt="">
+         <h3>SPICY SALSA CHEESY LOADE...</h3>
+         <p>Crispy chips coated in flavorful salsa <br> powder, generously topped with a...</p>
+         <div class="new-arrival-info">
+          <p>RS.720</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="new-arrival-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1779008200-702261705_1469311211607203_1458819378614023544_n-Copy.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>STRIPZILLA</h3>
+         <p>A soft, cornmeal-dusted bun stuffed <br> with two crispy, crunchy chicken stri...</p>
+         <div class="new-arrival-info">
+          <p>RS.390</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="new-arrival-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775916593-Classic-Mayo-Loaded-Fries.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>CLASSIC MAYO LOADED FRIES</h3>
+         <p>Golden, crispy fries topped with <br> tender, crunchy chicken chunks,...</p>
+         <div class="new-arrival-info">
+          <p>RS.690</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
-      <!-- section-6 -->
+      <!-- section-6 exclusive family deals -->
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1782134293-Exclusive-Family-Deals.webp%3Fq%3D10&w=1200&q=75" alt="">
+        </div>
       <section id="family" class="family">
-
+         <div class="family-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775905161-WhatsAppImage2026-04-11at3.57.51PM.jpeg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>MEGA SNACK BOX</h3>
+         <p>9 Pcs Crispy Fried Chicken Selecting <br> Chicken part is not Applicable on...</p>
+         <div class="family-info">
+          <p>RS.2090</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="family-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1791693171-Family-Combo-1-.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>FAMILY COMBO 1</h3>
+         <p>4 Chick N' Crunch Burger, 4 Crispy <br> Chicken Piece, 2 Dinner roll & 4PC...</p>
+         <div class="family-info">
+          <p>RS.2250</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="family-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1791693196-Family-Combo-2-.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>FAMILY COMBO 2</h3>
+         <p>2 Zenga Burger, 2 Chick N' Crunch <br> Burger, 4 Crispy Chicken Pieces, 2...</p>
+         <div class="family-info">
+          <p>RS.2450</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="family-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1791693228-Family-Combo-3-.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>FAMILY COMBO 3</h3>
+         <p>4 Zenga Burger, 4 Crispy Chicken
+             <br> Pieces, 2 dinner rolls & 4PC 330ML Litre...</p>
+         <div class="family-info">
+          <p>RS.2650</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
-      <!-- section-7 -->
+      <!-- section-7 our signature roll range -->
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1782134436-Signature-Roll-Range.webp%3Fq%3D10&w=1200&q=75" alt="">
+       </div>
       <section id="our-signature" class="our-signature">
-
+         <div class="our-signature-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1767605929-9b65c63c-d6f8-4894-968f-a1548db83353.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>CHICKEN CRISPY ROLL</h3>
+         <p>Golden crispy paratha paired with <br> crispy chicken strips, smooth mayo,</p>
+         <div class="our-signature-info">
+          <p>RS.450</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
-      <!-- section-8 -->
+      <!-- section-8 the original korean roll range -->
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1782138344-Korean-Range.webp%3Fq%3D10&w=1200&q=75" alt="">
+       </div>
       <section id="the-original" class="the-original">
-
+        <div class="our-signature-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775904541-Original-Korean-Loaded-Fries.webp%3Fq%3D10&w=384&q=75" alt="">
+         <h3>ORIGINAL KOREN LOADED...</h3>
+         <p>Crispy fries tossed in a tantalizing <br> salsa powder, topped with our</p>
+         <div class="our-signature-info">
+          <p>RS.790</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="our-signature-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775906662-WhatsAppImage2026-04-11at4.24.08PM.jpeg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>ORIGINAL KOREN RICE</h3>
+         <p>Fragrant rice, infused with a buttery <br> richness, served with crispy Hot Shots...</p>
+         <div class="our-signature-info">
+          <p>RS.590</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="our-signature-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775904746-Korean-burger.webp&w=640&q=90" alt="">
+         <h3>ORIGINAL KOREN BURGER</h3>
+         <p>Indulge in our one of a kind burger <br> featuring soft, handcrafted buns that</p>
+         <div class="our-signature-info">
+          <p>RS.720</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="our-signature-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775904855-Original-Korean-Hot-Wings-8-Pc.webp%3Fq%3D10&w=384&q=75" alt="">
+         <h3>ORIGINAL KOREN HOT WING...</h3>
+         <p>Savor the perfect blend of heat and <br> flavor with our crispy, golden wings...</p>
+         <div class="our-signature-info">
+          <p>RS.750</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
-      <!-- section-9 -->
+      <!-- section-9 premium burger -->
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1782138256-Premium-Burgers.webp%3Fq%3D10&w=1200&q=75" alt="">
+        </div>
       <section id="premium" class="premium">
-
+         <div class="premium-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1766490191-dd%20-%20Copy.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>BEEF SMASH BURGER</h3>
+         <p>A pillowy soft potato bun embracing a <br> juicy beef patty, draped in melted...</p>
+         <div class="premium-info">
+          <p>RS.920</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="premium-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1761553833-sindh%202.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>BEEF SMASH LACHA PARATHA</h3>
+         <p>We bring you our Original Smash <br> Lacha Paratha Burger.Crispy lacha...</p>
+         <div class="premium-info">
+          <p>RS.890</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
-      <!-- section-10 -->  
+      <!-- section-10 lacha paratha burger -->  
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1782138286-Lacha-Paratha-Burger.webp%3Fq%3D10&w=1200&q=75" alt="">
+       </div>
       <section id="lacha" class="lacha">
-
+         <div class="lacha-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1783071421-SAUSE-BEEF.jpeg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>1 BEEF SMASH LACHA...</h3>
+         <p>1 Beef Smash Lacha Paratha Single <br> Patty & 1 Saucy Chatkara Lacha...</p>
+         <div class="lacha-info">
+          <p>RS.1340</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="lacha-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1783071392-GOLD-BEEF.jpeg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>1 BEEF SMASH LACHA...</h3>
+         <p>1 Beef Smash Lacha Paratha Single <br> Patty & 1 Signature Golden Crunch...</p>
+         <div class="lacha-info">
+          <p>RS.1340</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="lacha-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1783071044-736007709_3235677263284448_2569783522018897908_n.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>1 SAUCY CHATKARA LACHA...</h3>
+         <p>1 Saucy Chatkara Lacha Paratha & 1 <br> Signature Golden Crunch Lacha</p>
+         <div class="lacha-info">
+          <p>RS.1320</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="lacha-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1783070930-733868131_1837998670504094_4212129153635348083_n.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>2 SAUCY CHATKARA LACHA...</h3>
+         <p>2 Saucy Chatkara Lacha Paratha+2 <br> drinks in just 1320...</p>
+         <div class="lacha-info">
+          <p>RS.1320</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="lacha-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1783070851-734783255_1579782987106122_4601537921291926142_n.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>2 SIGNATURE GOLDEN...</h3>
+         <P>2 Signature Golden Crunch Lacha <br> Paratha+2 drinks in just 1320</P>
+         <div class="lacha-info">
+          <p>RS.1320</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="lacha-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1761553833-sindh%202.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>BEEF SMASH LACHA...</h3>
+         <p>We bring you our Original Smash <br> Lacha Paratha Burger.Crispy lacha...</p>
+         <div class="lacha-info">
+          <p>RS.890</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="lacha-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1761555414-punjab.jpg%3Fq%3D10&w=256&q=75" alt="">
+         <h3>SAUCY CHATKARA LACHA...</h3>
+         <p>Keeping that spirit alive, we bring you <br> our Saucy Chatkara Lacha Paratha —</p>
+         <div class="lacha-info">
+          <p>RS.780</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="lacha-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1761555851-balochistan%202.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>SIGNATURE GOLDEN CRUNCH...</h3>
+         <p>We bring you crispy lacha paratha <br> stuffed with a crispy chicken patty,...</p>
+         <div class="lacha-info">
+          <p>RS.780</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
-      <!-- section-11-->
+      <!-- section-11 ice-cream shakes-->
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1782138369-Ice-cream-shakes.webp%3Fq%3D10&w=1200&q=75" alt="">
+        </div>
       <section id="ice-cream" class="ice-cream">
-
+        <div class="ice-cream-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775910909-1-Changes-1.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>CHOCOLATE ICE CREAM</h3>
+         <p>Indulge in a heavenly blend of velvety <br> chocolate ice cream, rich cocoa, and...</p>
+         <div class="ice-cream-info">
+          <p>RS.530</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="ice-cream-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1753605057-515317811_749426944694331_9149262726542161271_n.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>COOKIES AND CREAM SHAKE</h3>
+         <p>A classic favorite done right — our <br> Oreo Ice Cream Shake blends creamy...</p>
+         <div class="ice-cream-info">
+          <p>RS.530</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="ice-cream-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1753604154-514061795_2434472860269811_4221493647705511566_n.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>STRAWBERRY ICE CREAM</h3>
+         <p>Bursting with berrylicious flavor, our <br> Strawberry Ice Cream Shake blends...</p>
+         <div class="ice-cream-info">
+          <p>RS.530</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="ice-cream-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1753604436-514589901_1791349632265674_4551607150997400763_n.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>MANGO ICE CREAM SHAKE</h3>
+         <p>Escape into tropical bliss with our <br> Mango Ice Cream Shake — a luscious...</p>
+         <div class="ice-cream-info">
+          <p>RS.530</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
-      <!-- section-12 -->
+      <!-- section-12 something sweet -->
+       <div class="banner">
+        <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1782138433-Something-sweet.webp%3Fq%3D10&w=1200&q=75" alt="">
+        </div>
       <section id="sweet" class="sweet">
-         
+         <div class="sweet-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775989079-Red-Velvet.webp%3Fq%3D10&w=640&q=90" alt="">
+         <h3>RED VELVET CAKE IN A CAN...</h3>
+         <p>Layers of classic red velvet sponge <br> cake paired with smooth, cream</p>
+         <div class="sweet-info">
+          <p>RS.420</p>
+          <button>+</button>  
+         </div>
+        </div>
+          <div class="sweet-cards">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1775989067-Choco-Heaven.jpg%3Fq%3D10&w=384&q=75" alt="">
+         <h3>CHOCO-HEAVEN CAKE IN A...</h3>
+         <p>layers of moist chocolate sponge, rich <br> chocolate ganache, and decadent</p>
+         <div class="sweet-info">
+          <p>RS.420</p>
+          <button>+</button>  
+         </div>
+        </div>
       </section>
+      <div class="app-banner">
+       <h1>ORDER FASTER. <br>
+        EAT SOONER. 
+       </h1>  
+       <p>Download the Kababjees Fried Chicken App for exclusive deals,<br> real-time order tracking,  and seamless reordering.</p>
+       <div class="app-image">
+         <img class="app-img1" src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=%2Fassets%2Fimages%2FKababjeesFried%2Fmobpreview.webp&w=256&q=75" alt="">
+         <img class="app-img2" src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=%2Fassets%2Fimages%2FKababjeesFried%2Fkfchick.webp&w=384&q=75" alt="">
+       </div>
+       <div class="app1">
+         <img src="https://tse4.mm.bing.net/th/id/OIP.JM19VAZ_Zne9RxsnEpUe5gHaHa?r=0&pid=Api&h=220&P=0" alt="">
+         <p>Download on the</p>
+         <h3>AppStore</h3>
+       </div>
+       <div class="app2">
+         <img src="google-removebg-preview.png" alt="">
+         <p>GET IT ON</p>
+         <h3>GooglePlay</h3>
+       </div>
+      </div>
+       <h2>Kababjees Fried Chicken – Redefining the fast-food experience with its <br>
+          exceptional fried chicken</h2>
+      <!-- CONTACT -->
+      <div class="footer-contact">
+         <img src="logo.png" alt="">
+         <div class="cont">
+            <h3>Contact us</h3>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>021-111-666-111</p>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>5th St,Allama Shabbir Ahmed <br>Usmani Rd, Gulshan-e-Iqbal <br>Block 4 Karachi, 75500, <br>Pakistano</p>
+         </div>
+         <div class="follow">
+          <h3>Follow us</h3>  
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+         </div>
+         <div class="help">
+           <h3>Help</h3>
+           <p>Submit Your Complaint</p>
+           <p>Our Locations</p>
+           <p>Blogs</p>
+           <p>Banks Discounts</p> 
+         </div>
+      </div>
+      <img src="https://kababjeesfriedchicken.com/assets/images/KababjeesFried/footerbg.webp" alt="">
+      <!-- footer -->
+       <div class="footer">
+         <img src="https://kababjeesfriedchicken.com/api/images/kababjeesfriedchicken?url=%2Fassets%2Fimages%2Findolj-keenu-white.webp&w=750&q=75" alt="">
+         <a href="">PRIVACY POLICY</a>
+         <a href="">FAQS</a>
+       </div>
    </div>
 </body>
 </html>
